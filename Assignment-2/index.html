@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables Example</title>
+    <style>
+        body {
+            padding: 20px;
+
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px;
+            margin-bottom: 20px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .table2 td {
+            width: auto;
+        }
+
+        table td {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+
+        table img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 0;
+        }
+
+
+
+        table:last-child {
+            border: 1px solid black;
+            margin-bottom: 0;
+        }
+
+        .table4 tr:first-child td {
+            background-color: rgb(99, 122, 57);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .table4 tr:last-child td {
+
+            background-color: rgb(55, 55, 105);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            height: 10px;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Table 1 -->
+    <table>
+        <tr>
+            <td align="left">left</td>
+            <td align="center">Center</td>
+            <td align="right">right</td>
+        </tr>
+        <tr>
+            <td align="left">left</td>
+            <td align="center">Center</td>
+            <td align="right">right</td>
+        </tr>
+        <tr>
+            <td align="left">left</td>
+            <td align="center">Center</td>
+            <td align="right">right</td>
+        </tr>
+
+    </table>
+
+    <div style="margin-bottom: 40px;"></div>
+
+    <!-- Table 2 -->
+    <table class="table2">
+        <tr>
+            <th colspan="6">Heading</th>
+        </tr>
+
+        <tr>
+            <td colspan="6"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th colspan="6"></th>
+        </tr>
+
+    </table>
+
+
+    <div style="margin-bottom: 40px;"></div>
+
+
+    <!-- Table 3 -->
+    <table class="table3">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td rowspan="4"></td>
+            <td></td>
+            <td rowspan="4"></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+
+    </table>
+
+    <div style="margin-bottom: 40px;"></div>
+
+    <!-- Table 4 -->
+
+    <table class="table4">
+
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+
+        <tr>
+            <td rowspan="4"></td>
+            <td><img src="Capture.PNG" alt="Your Image"></td>
+            <td rowspan="4"></td>
+
+        </tr>
+
+        <tr>
+
+        </tr>
+        <tr>
+
+        </tr>
+        <tr>
+
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
