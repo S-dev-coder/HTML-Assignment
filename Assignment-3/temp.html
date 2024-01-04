@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+</head>
+
+<body>
+    <style>
+        .flex-cont {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (max-width: 600px) {
+            .flex-cont {
+                flex-direction: column;
+            }
+            .boxes-coding {
+                flex-direction:column;
+            }
+        }
+    </style>
+
+    <form>
+        <div class="flex-container">
+            <div class="flex-cont">
+                <div style="flex:1;">
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" id="firstName" name="firstName"><br><br>
+                </div>
+                <div style="flex:6;">
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" id="lastName" name="lastName"><br>
+                    <br>
+                </div>
+            </div>
+
+            <div class="flex-cont">
+                <div style="flex:1;">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                </div>
+                <div style="flex:6;">
+                    <label for="contactNumber">Contact Number:</label><br>
+                    <input type="tel" id="contactNumber" name="contactNumber"><br>
+                <br>
+                </div>
+            </div>
+
+            <div class="flex-cont">
+                <div style="flex:1;">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br><br>
+                </div>
+                <div style="flex:6;">
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <br>
+                    
+                </div>
+            </div>
+
+            <div class="flex-cont">
+                <div style="flex:1;">
+                    <label for="address">Address:</label><br>
+                    <textarea id="address" name="address"></textarea><br><br>
+                </div>
+                <div style="flex:6;">
+
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br><br>
+                    <br>
+
+                </div>
+            </div>
+            <div class="flex-cont">
+                <div style="flex:1;">
+                    <label for="qualification">Qualification:</label><br>
+                    <select id="qualification" name="qualification">
+                        <option value="High School">--Select--</option>
+                        <option value="Senior Secondary">Senior Secondary</option>
+                        <option value="Bachelor's Degree">Bachelor's Degree</option>
+                        <option value="Master's Degree">Master's Degree</option>
+                    </select><br><br>
+                </div>
+                <div style="flex:6;">
+                    <label for="experience">Experience:</label><br>
+                    <select id="experience" name="experience">
+                        <option value="0">--Select--</option>
+                        <option value="1">Fresher</option>
+                        <option value="1">1 Year</option>
+                        <option value="2">2 Years</option>
+                        <option value="3">3+ Years</option>
+                    </select><br><br>
+                    <br>
+                </div>
+            </div>
+                <div style="flex:6" class="boxes-coding">
+                    <label for="codingLanguage">Coding Language:</label>
+                    <input type="checkbox" id="codingLanguageHTML" name="codingLanguage" value="C/C++">
+                    <label for="codingLanguageHTML"> C/C++</label>
+                    <input type="checkbox" id="codingLanguageCSS" name="codingLanguage" value="Java">
+                    <label for="codingLanguageCSS">Java</label>
+                    <input type="checkbox" id="codingLanguageJS" name="codingLanguage" value="C#">
+                    <label for="codingLanguageJS">C#</label>
+                    <input type="checkbox" id="codingLanguageJS" name="codingLanguage" value="PHP">
+                    <label for="codingLanguageJS">PHP</label>
+                    <input type="checkbox" id="codingLanguageJS" name="codingLanguage" value="Python">
+                    <label for="codingLanguageJS">Python</label>
+
+                </div>
+                <br>
+                <br>
+            </div>
+            
+            <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
